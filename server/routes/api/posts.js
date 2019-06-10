@@ -18,6 +18,7 @@ router.post('/', async(req, res) =>{
     });
     res.status(201).send();
 });
+
 //Delete Posts
 router.delete('/:id', async(req, res) =>{
     const posts = await loadPostsCollection();
